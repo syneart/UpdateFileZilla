@@ -62,7 +62,7 @@ fi
 echo "Info: 正在下載 ${VERSION_FILEZILLA} 版本 .."
 wget -N -P /tmp http://jaist.dl.sourceforge.net/project/filezilla/FileZilla_Client/${VERSION_FILEZILLA}/FileZilla_${VERSION_FILEZILLA}_i586-linux-gnu.tar.bz2
 FILENAME_FILEZILLA="FileZilla_${VERSION_FILEZILLA}_i586-linux-gnu.tar.bz2"
-if [ !-f /tmp/${FILENAME_FILEZILLA} ]; then 
+if [ ! -f /tmp/${FILENAME_FILEZILLA} ]; then 
 	clear
 	echo "Error: 無法取得 FileZilla 檔案, 請再試一次"
 	sleep 3
